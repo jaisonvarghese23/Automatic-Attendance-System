@@ -1,0 +1,44 @@
+<?php
+if(isset($_POST['button1']))
+ {
+  $query= " SELECT * FROM student WHERE Department='computer Science'";
+  $result = mysqli_query($con,$query);
+  $cs='blue';
+ }
+ elseif(isset($_POST['button2']))
+ {
+  $query= " SELECT * FROM student WHERE Department='Electrical and Electronics Engineering'";
+  $result = mysqli_query($con,$query);
+  $eee = 'blue';
+ }
+ elseif(isset($_POST['button3']))
+ {
+  $query= " SELECT * FROM student WHERE Department='Electronics Engineering'";
+  $result = mysqli_query($con,$query);
+  $ec = 'blue';
+ }
+ elseif(isset($_POST['button4']))
+ {
+  $query= " SELECT * FROM student WHERE Department='Information Technology'";
+  $result = mysqli_query($con,$query);
+  $it = 'blue';
+ }
+ elseif(isset($_POST['button5']))
+ {
+  $query= " SELECT * FROM student WHERE Department='Mechanical Engineering'";
+  $result = mysqli_query($con,$query);
+  $me = 'blue';
+ }
+ elseif(isset($_POST['All'])){
+    $query= " SELECT * FROM student";
+    $result = mysqli_query($con,$query);
+    $all = 'blue';
+    }
+ 
+ else{
+ $query= " SELECT * FROM student";
+ $result = mysqli_query($con,$query);
+ $all = 'blue';
+
+ }
+ ?>
